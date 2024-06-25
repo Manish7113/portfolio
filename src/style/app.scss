@@ -1,0 +1,98 @@
+
+
+:root {
+    --bgColor: white;
+    --color: #000000
+}
+
+[theme="dark"] {
+    --bgColor: #212121;
+    --color: #fff;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    // background-color: var(--backgroundColor);
+    color: var(--color);
+    background-color: var(--bgColor);
+
+}
+
+// font size 
+
+.fs-xss {
+    font-size: .5rem;
+}
+
+.fs-smm {
+    font-size: .8rem;
+}
+
+.fs-mdd {
+    font-size: 1rem;
+}
+
+.fs-lgg {
+    font-size: 1.5rem;
+}
+
+.fs-xll {
+    font-size: 2rem;
+}
+
+.fs-xxl {
+    font-size: 3rem;
+}
+
+// font weight
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+// common css
+.cur-pointer {
+    cursor: pointer;
+}
+
+// component css
+
+.header{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    button{
+        border: none;
+        background-color: var(--bgColor);
+        color: var(--color);
+    }
+
+
+    .navList {
+        list-style-type: none;
+    }
+    
+    .navbar {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
