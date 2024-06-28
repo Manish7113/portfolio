@@ -1,13 +1,22 @@
 // @import './fontStyle.scss';
 
 :root {
-    --bgColor: white;
-    --color: #000000
+    --bgColor: rgb(228, 228, 228);
+    --color: #000000;
+    --red: #ff084a;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 [theme="dark"] {
     --bgColor: #212121;
     --color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -71,17 +80,72 @@ body {
     font-weight: 800;
 }
 
+// color
+.white {
+    color: white;
+
+}
+
+.red {
+    color: var(--red);
+}
+
+// background color
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+// main-btn
+.main-btn {
+    width: 180px;  
+    height: 50px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-btn:hover {
+    border: 2px solid var(--red);
+    background: transparent;
+}
+
+.main-btn-outlined {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    border: 2px solid var(--red);
+    transition: all .3s ease-in-out;
+}
+.main-btn-outlined:hover{
+  
+    border: none;
+    background-color:var(--red) ;
+    // border: 2px solid var(--red);
+}
+
 // common css
 .cur-pointer {
     cursor: pointer;
 }
+.txt-center{
+    text-align: center;
+}
 
 // component css
 
-.header{
-    
+.header {
+
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    button{
+
+    button {
         border: none;
         background-color: var(--bgColor);
         color: var(--color);
@@ -91,8 +155,57 @@ body {
     .navList {
         list-style-type: none;
     }
-    
+
     .navbar {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }
+
+
+
+/// about parent page 
+
+.aboutParent {
+    background-image: url('../../public/tableThree.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+
+}
+
+.subParent {
+    background-color: rgba(0, 0, 0, 0.696);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutContent {
+    width: 100%;
+    height: 100%;
+}
+
+.subHeading {
+    margin-top: -10px !important;
+
+}
+
+// bio
+.bioContainer{
+    width: 100%;
+    height: 100vh;
+    min-height: min-content;
+}
+.mainContainer{
+//    background-color:#ff084a;
+
+}
+.mainContainer:hover{
+}
+
+
+// skills

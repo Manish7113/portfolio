@@ -7,6 +7,7 @@ import Footer from "./@core/component/footer";
 import Navbar from "./@core/component/navbar";
 import Project from "./@core/component/project";
 import Skill from "./@core/component/skills";
+import Bio from "./@core/component/bio";
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       {isLoading ? <p>It is loading</p> : <> <Navbar></Navbar>
         <About></About>
+        <Bio></Bio>
         <Skill></Skill>
         <Project></Project>
         <Experience></Experience>
