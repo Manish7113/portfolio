@@ -1,4 +1,5 @@
 'use client'
+import { useEffect, useState } from "react";
 import About from "./@core/component/about";
 import Contact from "./@core/component/contact";
 import Experience from "./@core/component/experience";
@@ -8,17 +9,25 @@ import Project from "./@core/component/project";
 import Skill from "./@core/component/skills";
 
 export default function Home() {
+
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    setIsLoading(false)
+
+  }, [])
   return (
-  <>
-    <Navbar></Navbar>
-    <About></About>
-    <Skill></Skill>
-    <Project></Project>
-    <Experience></Experience>
-    <Contact></Contact>
-    <Footer></Footer>
-    
-    
+
+    <>
+      {isLoading ? <p>It is loading</p> : <> <Navbar></Navbar>
+        <About></About>
+        <Skill></Skill>
+        <Project></Project>
+        <Experience></Experience>
+        <Contact></Contact>
+        <Footer></Footer></>}
+
+
+
     </>
   );
 }
