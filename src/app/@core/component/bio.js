@@ -1,9 +1,9 @@
 export default function Bio() {
     return (
-        <div className="d-flex justify-content-center align-items-center bioContainer p-2">
+        <div className=" container d-flex justify-content-center align-items-center bioContainer p-2">
 
-            <div className="mainContainer container p-5 rounded-3 ">
-                <p className="border-bottom  fs-xll roboto-regular  ">Know more</p>
+            <div className="mainContainer p-5 rounded-3 ">
+                <p className="sectionHeading fs-xll roboto-regular  ">About Me</p>
                 
                 <p className="roboto-regular fs-lgg txt-center ">
                    <span className="fs-xll red">I</span> <span className="">turn</span>  ideas into websites! Think of me as a web architect. I use languages like HTML, CSS, and JavaScript (think building blocks) to craft websites, landing pages (fancy intro pages), and even admin panels (like the control room of a website). I also throw in React and Next.js for extra speed and efficiency. Basically, I'm the guy behind the scenes making sure websites look awesome and work flawlessly

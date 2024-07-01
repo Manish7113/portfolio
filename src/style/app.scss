@@ -14,9 +14,9 @@
 }
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -131,6 +131,11 @@ body {
     // border: 2px solid var(--red);
 }
 
+.LinkHeading{
+    text-decoration: none;
+    color: var(--color);
+}
+
 // common css
 .cur-pointer {
     cursor: pointer;
@@ -157,6 +162,7 @@ body {
     }
 
     .navbar {
+        
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }
@@ -200,12 +206,12 @@ body {
     height: 100vh;
     min-height: min-content;
 }
-.mainContainer{
-//    background-color:#ff084a;
+.sectionHeading{
+    width: max-content;
+    padding: 10px;
+    border-bottom: 5px solid var(--red);
+    margin-bottom: 40px;
 
 }
-.mainContainer:hover{
-}
-
 
 // skills
