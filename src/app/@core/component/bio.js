@@ -1,8 +1,8 @@
 export default function Bio() {
     return (
-        <div className=" container d-flex justify-content-center align-items-center bioContainer p-2">
+        <div className="container d-flex align-items-center bioContainer p-2">
 
-            <div className="mainContainer p-5 rounded-3 ">
+            <div className=" rounded-3 ">
                 <p className="sectionHeading fs-xll roboto-regular  ">About Me</p>
                 
                 <p className="roboto-regular fs-lgg txt-center ">

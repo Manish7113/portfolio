@@ -147,6 +147,13 @@ body {
 // component css
 
 .header {
+    // position: fixed;
+    // top: 6px;
+    // left: 0px;
+    // width: 100%;
+    
+    // background-color: var(--bgColor);
+    // z-index: 100000;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -162,7 +169,6 @@ body {
     }
 
     .navbar {
-        
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }
@@ -208,7 +214,7 @@ body {
 }
 .sectionHeading{
     width: max-content;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 5px solid var(--red);
     margin-bottom: 40px;
 

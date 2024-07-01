@@ -28,14 +28,14 @@ export default function Navbar() {
         return null;
     }
     return (
-        <header>
-            <nav className="d-flex justify-content-between align-items-center flex-wrap p-0 m-0 header pt-3 pb-3 ">
-                <aside>
-                    <h4 className='m-0 p-0 px-5' >Logo</h4>
+        <header >
+            <nav className=' row p-0 m-0 header py-3 '>
+                <aside className='col-12 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 d-flex align-items-center'>
+                    <h4 className='m-0 p-0 ps-2' >Manish</h4>
                 </aside>
-                <div className="d-flex justify-content-between align-items-center gap-5 navbar fs-lgg cur-pointer fw-500 px-5">
+                <div className='col-12 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar fs-lgg cur-pointer fw-500 d-flex align-items-center justify-content-between px-3'>
                     <Link href='/' className='p-0 m-0 LinkHeading'>Resume</Link>
-                   
+
                     <div>
                         {
                             mode === 'light' ? <button onClick={() => {
@@ -53,6 +53,7 @@ export default function Navbar() {
                 </div>
 
             </nav>
+            
         </header>
     )
 }

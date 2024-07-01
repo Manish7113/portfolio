@@ -8,6 +8,7 @@ import Navbar from "./@core/component/navbar";
 import Project from "./@core/component/project";
 import Skill from "./@core/component/skills";
 import Bio from "./@core/component/bio";
+import ProgressBar from "react-scroll-progress-bar";
 
 export default function Home() {
 
@@ -19,11 +20,12 @@ export default function Home() {
   return (
 
     <>
+    
       {isLoading ? <p>It is loading</p> : <> <Navbar></Navbar>
+        <ProgressBar height="6" bgcolor="#ff084a" duration="0.2" />
         <About></About>
         <Bio></Bio>
         <Skill></Skill>
-        <Bio></Bio>
         <Project></Project>
         <Experience></Experience>
         <Contact></Contact>
